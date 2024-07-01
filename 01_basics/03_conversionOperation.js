@@ -27,3 +27,9 @@ let someNumber = 33;
 let stringNumber = String(someNumber);
 console.log(stringNumber);
 console.log(typeof(stringNumber)); // it will be string i.e 33
+
+// ------------------------------------------
+
+console.log("1" + 2 + 2); // this will be 122 because string came first
+console.log(1 + 2 + "2"); // this will be 32 because int came first
+
