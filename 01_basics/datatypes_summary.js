@@ -54,3 +54,30 @@ console.log(typeof outsideTemp); // this will be object because null has type i.
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+// ---------------------------------------------------------------------------
+
+// WHAT IS STACK AND HEAP MEMORY IN JAVASCRIPT?
+
+// STACK(Primitive),
+// HEAP (Non Primitive)
+
+let myYoutubeName = "hiteshch"
+
+let anotherName = myYoutubeName
+anotherName = "chaiaurCode"
+
+console.log(anotherName)     //----->  it will be chaiaurCode
+console.log(myYoutubeName)   // -----> it will be hiteshch
+// it is pass by value so copy of existing variable is passed to new variable, so by changing new variable previous remain same;
+
+let userOne = {
+    email:"user@gmail.com"
+}
+
+let userTwo = userOne
+
+userTwo.email = "mudassir@gmail.com"
+
+console.log(userOne.email)    // ----> mudassir@gmail.com
+console.log(userTwo.email)   // -----> mudassir@gmail.com
