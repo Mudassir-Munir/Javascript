@@ -25,3 +25,18 @@ console.log(a);
 console.log(b);
 console.log(c);
 
+
+console.log(addone(5)); // this will work if we call function before declaration
+function addone(num) {
+    return num + 1
+}
+
+//console.log(addone(5));
+
+console.log(addTwo(5)); // when function is defind as expression and we call before initialization it will give error
+// this way of function declaration is know as expression (hoisting)
+const addTwo = function (num) {
+    return num + 2
+}
+
+//console.log(addTwo(5))
